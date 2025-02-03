@@ -15,7 +15,7 @@ body{
     background: #36454F;
 }
 
-gallery {
+galeria {
     display: flex;
     flex-flow: row wrap;
     width: 100%;
@@ -34,3 +34,21 @@ gallery {
     object-fit: cover;
   }
 
+  .galleryMonster {
+    flex-basis: 10%;
+    width: 100%;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+.galleryMonster img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  #myInput {
+    padding: 4px 4px 4px 4px; /* Add some padding */
+    border: 1px solid #ddd; /* Add a grey border */
+    margin-bottom: 12px; /* Add some space below the input */
+  }

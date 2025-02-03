@@ -1,29 +1,17 @@
 <?php
 
-    function conectionDB($name){
-        $host = 'localhost';
+    function connectionDB($name){
         $dbname = $name;
-        $username = 'sserver';
-        $password = 'root';
-        $server = 'DESKTOP-V78LTMH\SQLEXPRESS';
+        $user = 'sa';
+        $password = "root";
+        $dsn = "sqlsrv:Server=DESKTOP-V78LTMH\SQLEXPRESS";$dbname;$user;$password;
         try{
-            $conn = new PDO("sqlsrv:server=".$server.";database=".$dbname,$username,$password);
+            $conn = new PDO($dsn);
             if($conn){
                 return $conn;
-      }
+            }
         }catch(PDOException $e){
             echo $e->getMessage();
         }
-    }
-
-    try{
-        $test = conectionDB('MonsterHunterWilds');
-
-        if($test){
-            echo "Conectado correctamente";
-            echo "\n";
-        }
-    }catch(PDOException $e){
-        echo $e->getMessage();
     }
 ?>
