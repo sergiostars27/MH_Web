@@ -20,7 +20,13 @@
           
         <div class="gallery">
           <a href="main_wilds.php">
-            <img src="./images/mhwilds.png">
+            <img src="./images/MH_Wilds/mhwilds.png">
+            </a>
+        </div>
+
+        <div class="gallery">
+          <a href="main_world.php">
+            <img src="./images/MH_World/mhworld.png">
             </a>
         </div>
 

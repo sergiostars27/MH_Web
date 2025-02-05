@@ -17,25 +17,25 @@
         
           
         <div class="gallery">
-          <a href="wilds_monsters.php">
+          <a href="world_monsters.php">
             <img src="./images/questionmark.webp">
             </a>
         </div>
 
         <div class="gallery">
-            <a href="wilds_misions.php">
+            <a href="world_misions.php">
               <img src="./images/quest.webp">
               </a>
         </div>
 
         <div class="gallery">
-            <a href="wilds">
+            <a href="world">
               <img src="./images/drop.webp">
               </a>
         </div>
 
         <div class="gallery">
-            <a href="wilds_weapons.html">
+            <a href="world_weapons.html">
               <img src="./images/weapon.png">
               </a>
         </div>
@@ -43,6 +43,12 @@
         <div class="gallery">
             <a href="img_forest.jpg">
               <img src="./images/deco.png">
+              </a>
+        </div>
+
+        <div class="gallery">
+            <a href="world_maps.php">
+              <img src="./images/map.webp">
               </a>
         </div>
           

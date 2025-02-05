@@ -1,5 +1,4 @@
-<?php include 'connections.php';?>
-
+<?php include 'connections.php'; session_start();?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -22,18 +21,16 @@
         
           
     <?php 
-        $conn = connectionDB('MonsterHunterWilds');
-        $query  = "SELECT * FROM [MonsterHunterWilds].[dbo].[monster] WHERE MonsterId > 0";
+        $conn = connectionDB('MonsterHunterWorld');
+        $query  = "SELECT * FROM [MonsterHunterWorld].[dbo].[monster] WHERE MonsterId > 0";
         $stmt = $conn -> prepare($query);
         $stmt -> execute();
         $datos = $stmt-> fetchAll(PDO::FETCH_ASSOC);
-
-        $test = "test";
     
         foreach($datos as $monstruos){
             $name = $monstruos["MonsterName"];
-            echo "<div class='galleryMonster'><a href='wilds_monsters.php'>
-              <img src=".$monstruos["MonsterIcon"]." alt='{$name}'></a></div>";
+            echo "<div class='galleryMonster'><a id='{$name}' href='world_monster.php?monster={$name}'>
+              <img src=./images/MH_World/Monstruos/".$monstruos["MonsterIcon"]." alt='{$name}'></a></div>";
         }
     ?>
           
@@ -47,6 +44,3 @@
   </body>
   <script src="./index.js"></script>
 </html>
-
-<?php 
-?>
